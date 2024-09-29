@@ -12,17 +12,22 @@ on:
 # agora vamos incluir algumas tarefas
 jobs:
   job1:
+    # incluindo o nome da tarefa Job 1
     name: Job 1
-    runs-on: ubuntu.latest  # aqui é uma máquina virtual docker para rodar nossos passos nesta máquina
-      
+    # importante definir o ambiente (máquina virtual docker linux) onde iremos rodar nossos passos
+    runs-on: ubuntu.latest  
+
+    # dentro das tarefas podemos incluir um vetor de dois passos para exibir duas mensagens na console  
     steps:
     - name: Passo 1
       run: echo "Exibir uma mensagem de texto para o passo 1"
 
     - name: Passo 2
       run: echo "Exibir uma mensagem de texto para o passso 2"
-
+      
+  # vamos incluir mais outra tarefa similar, apenas para exemplificar a execução do pipeline
   job2:
+    # incluindo o nome da tarefa Job 2
     name: Job 2
     runs-on: ubuntu.latest
     
