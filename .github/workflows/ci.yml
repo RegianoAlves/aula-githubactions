@@ -1,4 +1,4 @@
-name: Integração Contínua com testes
+name: Integração Contínua com tarefas de testes
 on:
   push:
     branches: [ main ]
