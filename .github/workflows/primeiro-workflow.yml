@@ -1,5 +1,6 @@
+# primeiramente vamos dar um nome para o workflow (pipeline) no formato de pares chave: valor
 name: Workflow
-
+# agora vamos identificar alguns eventos (push e pull_request) do pipeline 
 on:
   push: 
     branches:
@@ -7,11 +8,12 @@ on:
   pull_request:
     branches:
       - main
-
+      
+# agora vamos incluir algumas tarefas
 jobs:
   job1:
     name: Job 1
-    runs-on: ubuntu.latest
+    runs-on: ubuntu.latest  # aqui é uma máquina virtual docker para rodar nossos passos nesta máquina
       
     steps:
     - name: Passo 1
