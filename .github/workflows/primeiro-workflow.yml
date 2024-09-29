@@ -15,7 +15,7 @@ jobs:
     # incluindo o nome da tarefa Job 1
     name: Job 1
     # importante definir o ambiente (máquina virtual docker linux) onde iremos rodar nossos passos
-    runs-on: ubuntu.latest  
+    runs-on: ubuntu-latest  
 
     # dentro das tarefas podemos incluir um vetor de dois passos para exibir duas mensagens na console  
     steps:
@@ -30,7 +30,7 @@ jobs:
   job2:
     # incluindo o nome da tarefa Job 2
     name: Job 2
-    runs-on: ubuntu.latest
+    runs-on: ubuntu-latest
     
     steps:
     - name: Passo 1
