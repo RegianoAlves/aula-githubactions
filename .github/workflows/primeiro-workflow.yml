@@ -19,6 +19,7 @@ jobs:
 
     # dentro das tarefas podemos incluir um vetor de dois passos para exibir duas mensagens na console  
     steps:
+    - uses: actions/checkout@v4
     - name: Passo 1
       run: echo "Exibir uma mensagem de texto para o passo 1"
 
