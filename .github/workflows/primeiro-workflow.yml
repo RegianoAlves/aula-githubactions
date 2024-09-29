@@ -14,21 +14,21 @@ jobs:
     runs-on: ubuntu.latest
       
     steps:
-      - name: Passo 1
-        run: echo "Exibir uma mensagem de texto para o passo 1"
+    - name: Passo 1
+      run: echo "Exibir uma mensagem de texto para o passo 1"
 
-      - name: Passo 2
-        run: echo "Exibir uma mensagem de texto para o passso 2"
+    - name: Passo 2
+      run: echo "Exibir uma mensagem de texto para o passso 2"
 
   job2:
-    name: Job 1
+    name: Job 2
     runs-on: ubuntu.latest
+    
+    steps:
+    - name: Passo 1
+      run: echo "Exibir uma mensagem de texto do job 2 para o passo 1"
       
-      steps:
-      - name: Passo 1
-        run: echo "Exibir uma mensagem de texto do job 2 para o passo 1"
-
-      - name: Passo 2
-        run: echo "Exibir uma mensagem de texto do job 2 para o passso 2"
+    - name: Passo 2
+      run: echo "Exibir uma mensagem de texto do job 2 para o passso 2"
     
       
